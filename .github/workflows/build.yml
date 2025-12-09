@@ -42,9 +42,8 @@ jobs:
             exe_ext: ''
             archive_format: tar.gz
             archive_ext: .tar.gz
-          # 注意: GitHub Actions 公共 runner 使用 ubuntu-latest-arm64
-          # 如果需要 ubuntu-24.04-arm，请使用自托管 runner
-          - os: ubuntu-latest-arm64
+          
+          - os: ubuntu-24.04-arm
             goos: linux
             goarch: arm64
             exe_ext: ''
